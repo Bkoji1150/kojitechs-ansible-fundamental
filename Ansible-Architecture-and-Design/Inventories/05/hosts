@@ -1,5 +1,5 @@
 [controle]
-10.0.2.141 ansible_connection=ssh ansible_ssh_user=ansible ansible_ssh_pass=ansible
+controle-node ansible_connection=local
 
 [worker]
 10.0.0.141 ansible_become=true ansible_become_pass=kojitechs
