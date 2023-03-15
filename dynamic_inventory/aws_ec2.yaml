@@ -14,3 +14,4 @@ groups:
   # This created two groups - `Production` and `PreProduction` based on tags
   # These conditionals are expressed using Jinja2 syntax.
   redhat: "'amazon-ec2' in tags.OS"
+  ubuntu: "'ubuntu' in tags.OS"
