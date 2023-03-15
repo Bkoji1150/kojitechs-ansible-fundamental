@@ -3,15 +3,8 @@ regions:
   - us-east-1
 
 hostnames:
-  # This option allows displaying the public ip addresses.
   - ip-address  
 
-# keyed_groups:
-# # This creates host groups based on architecture.
-# - prefix: az
-#   key: placement.availability_zone
 groups:
-  # This created two groups - `Production` and `PreProduction` based on tags
-  # These conditionals are expressed using Jinja2 syntax.
   redhat: "'amazon-ec2' in tags.OS"
   ubuntu: "'ubuntu' in tags.OS"
