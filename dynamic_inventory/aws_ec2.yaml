@@ -4,6 +4,7 @@ regions:
 
 hostnames:
   - ip-address  
+  - private-ip-address
 
 groups:
   redhat: "'amazon-ec2' in tags.OS"
