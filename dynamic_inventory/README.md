@@ -18,5 +18,5 @@ eval "$(ssh-agent -s)
 ```
 ## Ansible host
 ansible-pull ping_playbook.yaml \
-    -U https://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@github.com/Bkoji1150/kojitechs-ansible-fundamental.git 
+    -U https://$github_url@github.com/Bkoji1150/kojitechs-ansible-fundamental.git 
 
