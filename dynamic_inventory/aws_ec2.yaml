@@ -2,14 +2,13 @@ plugin: aws_ec2
 regions:
   - us-east-1
 
-hostnames:
-  - ip-address  
+hostnames: 
   - private-ip-address
 
 compose:
   # This sets the `ansible_host` variable to connect with the private IP address without changing the hostname.
   ansible_host: private_ip_address
-  
+
 groups:
   redhat: "'amazon-ec2' in tags.OS"
   ubuntu: "'ubuntu' in tags.OS"
