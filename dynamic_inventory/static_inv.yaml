@@ -1,4 +1,4 @@
-[amazon-ec2]
+[amazon_ec2]
 
 [ubuntu]
 
@@ -7,4 +7,4 @@
 [linux:children]
 ubuntu
 redhat
-amazon-ec2
+amazon_ec2

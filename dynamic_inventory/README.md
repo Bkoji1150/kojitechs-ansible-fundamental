@@ -10,7 +10,7 @@ aws ssm get-parameters \
     --names jenkins-agent-bootstrap-ssh-key \
     --query "Parameters[*].{Value:Value}[0].Value" > private-key private-key
 chmod 0600 private-key
-eval "$(ssh-agent -s)
+eval "$(ssh-agent -s)"
 ```
 ## Test
 ```

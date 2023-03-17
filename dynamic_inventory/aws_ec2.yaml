@@ -9,6 +9,6 @@ compose:
   ansible_host: private_ip_address
 
 groups:
-  amazon-ec2: "'amazon-ec2' in tags.OS"
+  amazon_ec2: "'amazon-ec2' in tags.OS"
   ubuntu: "'ubuntu' in tags.OS"
   redhat: "'redhat' in tags.OS" 
