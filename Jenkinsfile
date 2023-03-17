@@ -37,8 +37,8 @@ pipeline {
             steps {
                 sh """
                 mv private-key dynamic_inventory 
-                cd dynamic_inventory 
-                /usr/local/bin/ansible linux -m ping
+                cd dynamic_inventory && pwd && ls -al
+                /usr/local/bin/ansible --version
                 """
             }
         }
