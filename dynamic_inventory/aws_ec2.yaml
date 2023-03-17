@@ -8,6 +8,9 @@ hostnames:
 compose:
   ansible_host: private_ip_address
 
+filters:
+  instance-state-name : running
+  
 groups:
   amazon_ec2: "'amazon-ec2' in tags.OS"
   ubuntu: "'ubuntu' in tags.OS"
