@@ -36,6 +36,7 @@ pipeline {
         stage('ping-ansible-host') {
             steps {
                 sh """
+                mv private-key dynamic_inventory 
                 cd dynamic_inventory 
                 /usr/local/bin/ansible linux -m ping
                 """
