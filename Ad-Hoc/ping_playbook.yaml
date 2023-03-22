@@ -1,0 +1,8 @@
+- name: Ping dynamic inventory 
+  hosts: linux
+  become_user: root
+  become_method: sudo
+
+  tasks:
+    - name: ping dynamic inventory 
+      ping:

@@ -14,7 +14,7 @@ pipeline {
                 """
             }
         }
-         stage('download-ssh-key') {
+        stage('download-ssh-key') {
             steps {
                 sh """
                 aws ssm get-parameters \

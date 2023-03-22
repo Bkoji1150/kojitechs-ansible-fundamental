@@ -1,0 +1,10 @@
+[amazon_ec2]
+
+[ubuntu]
+
+[redhat]
+
+[linux:children]
+ubuntu
+redhat
+amazon_ec2
