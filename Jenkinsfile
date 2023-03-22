@@ -32,7 +32,7 @@ pipeline {
                 sh """
                 mv private-key dynamic_inventory 
                 cd dynamic_inventory && pwd && ls -al
-                /usr/local/bin/ansible --version
+                ansible --version
                 """
             }
         }
