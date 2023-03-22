@@ -1,6 +1,8 @@
 pipeline {
     agent any
-
+    parameters {
+        string(name: 'playbook_name', defaultValue: 'ping_playbook.yaml', description: 'playbook name')
+    }
     stages {
         stage('test') {
             steps {
@@ -32,7 +34,7 @@ pipeline {
                 sh """
                 mv private-key dynamic_inventory 
                 cd dynamic_inventory && pwd && ls -al
-                ansible --version
+                ansible-playbook ${params.playbook_name}
                 """
             }
         }
