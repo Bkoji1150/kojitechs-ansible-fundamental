@@ -34,6 +34,7 @@ pipeline {
                 sh """
                 mv private-key dynamic_inventory 
                 cd dynamic_inventory && pwd && ls -al
+                pip3 install boto3 && pip3 install botocore
                 ansible-playbook ${params.playbook_name}
                 """
             }
