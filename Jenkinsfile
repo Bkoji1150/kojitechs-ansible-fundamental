@@ -34,8 +34,8 @@ pipeline {
                 sh """
                 mv private-key dynamic_inventory 
                 cd dynamic_inventory && pwd && ls -al
+                ansible-playbook ${params.playbook_name}
                 """
-                ansiblePlaybook become: true, installation: 'ansible', playbook: 'ping_playbook.yaml'
             }
         }
     }
